@@ -99,7 +99,7 @@ public class JobData {
 
         for (HashMap<String, String> job: allJobs){
             for (Map.Entry<String, String> data: job.entrySet()){
-                if (data.getValue().toLowerCase().equals(value.toLowerCase())){
+                if (data.getValue().toLowerCase().contains(value.toLowerCase())){
                     valueJobs.add(job);
                     break;
                 }
